@@ -1,0 +1,38 @@
+.spoller {
+	&__item {
+		background-color: rgb(0, 166, 255);
+	}
+
+	&__title {
+		position: relative;
+		width: 100%;
+		text-align: left;
+		background-color: rgb(0, 166, 255);
+		cursor: default;
+	}
+
+	&__text {
+		cursor: default;
+	}
+}
+.spoller._init .spoller__title {
+	cursor: pointer;
+}
+.spoller._init .spoller__title::after,
+.spoller._init .spoller__title::before {
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	transform: translate(0, -50%);
+	transition: all 0.3s ease 0s;
+}
+.spoller._init .spoller__title::after {
+	transform: rotate(-90deg);
+}
+.spoller._init .spoller__title._active::after {
+	transform: rotate(0deg);
+}

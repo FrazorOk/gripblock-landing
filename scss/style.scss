@@ -1,0 +1,130 @@
+// const
+@import '_nullstyle.scss';
+@import '_constants.scss';
+@import '_header.scss';
+@import '_head.scss';
+@import '_advantages.scss';
+@import '_about.scss';
+@import '_partners.scss';
+@import '_gallery.scss';
+@import '_reviews.scss';
+@import '_getStart.scss';
+@import '_footer.scss';
+@import '_popup.scss';
+
+body {
+	background-color: #fafafa;
+}
+.wrapper {
+	font-family: 'Poppins', sans-serif;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+[class*='__container'] {
+	max-width: $widthContainer;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page {
+	flex: 1 1 auto;
+	padding-top: $headerMinHeight;
+}
+
+.container {
+	max-width: $widthContainer;
+	margin: 0 auto;
+}
+
+.green-btn {
+	width: fit-content;
+	flex-grow: 0;
+	flex-shrink: 0;
+	display: block;
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #fafafa;
+	background-color: #84b93e;
+	box-shadow: 0px 100px 80px rgba(56, 56, 56, 0.1), 0px 64.8148px 46.8519px rgba(56, 56, 56, 0.0759259),
+		0px 38.5185px 25.4815px rgba(56, 56, 56, 0.0607407), 0px 20px 13px rgba(56, 56, 56, 0.05),
+		0px 8.14815px 6.51852px rgba(56, 56, 56, 0.0392593), 0px 1.85185px 3.14815px rgba(56, 56, 56, 0.0240741);
+	padding: 16px 35px 15px 35px;
+	border: 1px solid #84b93e;
+	transition: all 0.3s ease 0s;
+}
+
+.green-btn:hover {
+	background: transparent;
+	color: #84b93e;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	color: #313131;
+	z-index: 1;
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	color: #222831;
+}
+
+.under-title {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 188%;
+	text-align: center;
+	color: #425466;
+	z-index: 1;
+}
+
+@media (max-width: 700px) {
+	.green-btn {
+		font-size: 14px;
+		line-height: 17px;
+		padding: 10px 15px;
+	}
+
+	h2 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	h3 {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 18px;
+		color: #222831;
+	}
+
+	.under-title {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 460px) {
+	h3 {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 18px;
+		color: #222831;
+	}
+
+	.under-title {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
