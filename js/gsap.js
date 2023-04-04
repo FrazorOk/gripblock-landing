@@ -283,7 +283,7 @@ tlGallery
 
 // getStart
 
-gsap.from('.getStart__decorator', {
+gsap.from('._getStart .getStart__decorator', {
 	scrollTrigger: {
 		trigger: '.getStart',
 		start: 'top 75%',
@@ -294,7 +294,7 @@ gsap.from('.getStart__decorator', {
 	ease: 'elastic',
 });
 
-gsap.from('.getStart__ellipses', {
+gsap.from('._getStart .getStart__ellipses', {
 	scrollTrigger: {
 		trigger: '.getStart',
 		start: 'top 75%',
@@ -312,20 +312,20 @@ let tlGetStart = gsap.timeline({
 	},
 });
 tlGetStart
-	.from('.getStart h2', {
+	.from('._getStart h2', {
 		y: '50%',
 		opacity: 0,
 		duration: 0.5,
 		ease: 'power1.in',
 	})
 
-	.from('.getStart .under-title', {
+	.from('._getStart .under-title', {
 		y: '50%',
 		opacity: 0,
 		duration: 0.5,
 		ease: 'power1.in',
 	})
-	.from('.getStart__form', {
+	.from('._getStart .getStart__form', {
 		y: '30%',
 		opacity: 0,
 		duration: 0.5,
